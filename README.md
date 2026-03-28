@@ -42,7 +42,7 @@ This creates your own copy of the project.
 
 Copy your forked repository link and run:
 
-```bash
+```bash id="6wql4e"
 git clone https://github.com/yourusername/github-contributions.git
 ```
 
@@ -50,7 +50,7 @@ git clone https://github.com/yourusername/github-contributions.git
 
 ### 3) Move into the Project Folder
 
-```bash
+```bash id="21hjzw"
 cd github-contributions
 ```
 
@@ -58,23 +58,39 @@ cd github-contributions
 
 ### 4) Create a New Branch
 
-Create a branch using your name.
+Create a branch using **your name only**.
 
-```bash
-git checkout -b your-name
+For example, if your name is **John Doe**, use:
+
+```bash id="eqm8uw"
+git checkout -b john-doe
 ```
 
-Example:
+If your name is **Karthik**, use:
 
-```bash
+```bash id="jafzhz"
 git checkout -b karthik
 ```
 
+⚠️ Please remember your branch name, because you must use the **same name everywhere**.
+
 ---
 
-### 5) Make Your Changes
+### 5) Sync with Latest Changes
 
-Now open the project and make your assigned changes.
+Before starting your work, always sync with the latest code from main.
+
+```bash id="x2e67d"
+git pull origin main
+```
+
+This helps avoid conflicts.
+
+---
+
+### 6) Make Your Changes
+
+Now make your assigned changes.
 
 Examples:
 
@@ -85,30 +101,37 @@ Examples:
 
 ---
 
-### 6) Save Changes
+### 7) Save Your Changes
 
-```bash
+```bash id="0rshiy"
 git add .
 git commit -m "Added my contribution"
 ```
 
 ---
 
-### 7) Push Your Branch
+### 8) Push Your Branch
 
-```bash
-git push origin your-name
+Use the **same branch name you created earlier**.
+
+For example, if your branch is `john-doe`, then use:
+
+```bash id="3rm6g8"
+git push origin john-doe
 ```
 
-Example:
+If your branch is `karthik`, then use:
 
-```bash
+```bash id="r1z89l"
 git push origin karthik
 ```
 
+⚠️ Do not change the branch name here.
+Use the exact same name.
+
 ---
 
-### 8) Create Pull Request
+### 9) Create Pull Request
 
 Go to GitHub and click **Compare & Pull Request**
 
@@ -116,25 +139,39 @@ Fill the PR template and submit it.
 
 ---
 
-## 📝 Using Templates
+## 🔄 If Something Goes Wrong
 
-Before working, check the **Issues** section.
+If you accidentally move to another branch or face an issue, you can always go back to your own branch.
 
-Pick an issue and work on it.
+Use the **same branch name**.
 
-When creating a Pull Request, please fill the **PR template** properly.
+For example, if your branch is `john-doe`, use:
 
-Templates are already added inside the `.github` folder.
+```bash id="zw77dq"
+git checkout john-doe
+```
+
+If your branch is `karthik`, use:
+
+```bash id="n3rvw7"
+git checkout karthik
+```
+
+This will take you back to your branch.
 
 ---
 
-## 💡 Contribution Rules
+## 💡 Important Note
 
-* Keep changes simple and clean
-* Do not edit others’ work
-* Use your own branch
-* Raise a Pull Request after completing work
-* Mention the issue number in PR if possible
+Always use the **same branch name that you created in Step 4**.
+
+Example:
+
+* Created branch → `john-doe`
+* Push command → `git push origin john-doe`
+* Go back command → `git checkout john-doe`
+
+Use the same name in all places.
 
 ---
 
