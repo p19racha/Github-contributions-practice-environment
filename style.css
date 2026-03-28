@@ -117,6 +117,24 @@ body {
   filter: brightness(1.04);
 }
 
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.hero-cta-secondary {
+  background: #ffffff;
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+.hero-cta-secondary:hover,
+.hero-cta-secondary:focus-visible {
+  box-shadow: 0 10px 18px rgba(20, 44, 52, 0.16);
+  filter: none;
+}
+
 .showcase {
   margin-bottom: 1.8rem;
 }
@@ -128,6 +146,26 @@ body {
   border-radius: 16px;
   border: 1px dashed #b4c3c9;
   background: rgba(255, 255, 255, 0.72);
+}
+
+.workflow-preview {
+  width: min(1100px, 100%);
+  margin: 0 auto 1.8rem;
+  padding: 1.2rem;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.workflow-preview h2 {
+  margin: 0 0 0.35rem;
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
+  font-size: clamp(1.25rem, 2.2vw, 1.6rem);
+}
+
+.workflow-preview p {
+  margin: 0 0 0.85rem;
+  color: var(--muted);
 }
 
 .workflow h2 {
